@@ -140,7 +140,7 @@ Suppose you're working on a project with multiple CSS files located in different
 
 With this configuration, the editor tabs will display labels like `/home styles.css`, `/layout styles.css`, etc., providing clarity and ease of navigation.
 
-<video controls src="https://code.visualstudio.com/assets/updates/1_88/custom-editor-labels.mp4" title="Custom Editor Labels"></video>
+[![Custom Editor Labels](./images/vscode-custom-editor-labels.png)](https://code.visualstudio.com/assets/updates/1_88/custom-editor-labels.mp4)
 
 <sup>_Source: [Visual Studio Code - Custom Editor Labels](https://code.visualstudio.com/updates/v1_88#_custom-labels-for-open-editors)_</sup>
 
