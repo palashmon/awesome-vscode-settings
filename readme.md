@@ -1,10 +1,10 @@
-## Awesome VS Code Settings
+<!-- lint ignore awesome-git-repo-age -->
+
+# Awesome VS Code Settings ![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)
 
 A curated list of simple and awesome [Visual Studio Code](https://code.visualstudio.com/) settings — `settings.json`.
 
 **_This list is continuously updated._** - You can make a pull requests and contribute.
-
-&nbsp;
 
 ## Contents
 
@@ -302,7 +302,9 @@ When searching for files or content within your project, you may encounter irrel
 
 #### How to Solve the Issue
 
+<!--lint disable double-link-->
 To exclude files or directories from search results, you can define [glob patterns](https://code.visualstudio.com/docs/editor/glob-patterns) in your `settings.json` file that match the paths you want to ignore. By specifying these patterns in the `files.exclude` setting, you can prevent the search feature from indexing or displaying files that match the defined criteria.
+<!--lint enable double-link-->
 
 #### Example
 
