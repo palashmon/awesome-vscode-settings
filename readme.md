@@ -14,6 +14,7 @@ A curated list of simple and awesome [Visual Studio Code](https://code.visualstu
   - [Hide Inlay Hints](#hide-inlay-hints) - Hide inlay hints in the editor for a cleaner view.
   - [Files Auto Save](#files-auto-save) - Automatically save files after a specified delay.
   - [Automatically Fold Imports](#automatically-fold-imports) - Automatically fold imports in the editor.
+  - [Smooth Cursor Animation](#smooth-cursor-animation) - Enable smooth cursor animation for a more fluid editing experience.
 - [Explorer](#explorer)
   - [Compact Folders in Explorer](#compact-folders-in-explorer) - Disable displaying folders in compact form in the Explorer view.
   - [Disable File Decorations](#disable-file-decorations) - Disable file decorations (Git, problems) in the Explorer view.
@@ -124,7 +125,9 @@ When working on projects with multiple files having the same name, it can be cha
 
 #### How to Solve the Issue
 
+<!--lint disable double-link-->
 To begin, ensure that custom labels are enabled in your IDE settings. Also, you'll need to define custom patterns that match specific file paths and specify how you want the editor tabs to be labeled. Each entry in this setting should consist of a [glob pattern](https://code.visualstudio.com/docs/editor/glob-patterns) and a corresponding template for the editor tab label.
+<!--lint enable double-link-->
 
 In the template, you can utilize variables such as `${filename}`, `${extname}`, `${dirname}`, and `${dirname(N)}` to dynamically replace values from the file's path. Tailor these templates according to your preference to create unique labels for your editor tabs.
 
@@ -199,6 +202,20 @@ When working with code files that contain numerous imports, the editor view can 
 ```
 
 Once enabled, this setting will automatically fold import statements when opening code files, providing a cleaner and more organized view of your codebase. You can expand or collapse the import blocks manually as needed to view or hide the import statements.
+
+### Smooth Cursor Animation
+
+#### Overview
+
+Cursor animation in the editor provides visual feedback when moving the cursor between characters or lines in your code. To enhance the cursor behavior and create a smoother editing environment, you can enable smooth cursor animation in your IDE settings.
+
+#### Setting
+
+```json
+"editor.cursorSmoothCaretAnimation": "on"
+```
+
+Once enabled, smooth cursor animation will provide a more fluid and responsive cursor movement in the editor, enhancing the editing experience and reducing visual distractions.
 
 ## Explorer
 
