@@ -17,7 +17,8 @@ A curated list of simple and awesome [Visual Studio Code](https://code.visualstu
 - [Explorer](#explorer)
   - [Compact Folders in Explorer](#compact-folders-in-explorer) - Disable displaying folders in compact form in the Explorer view.
   - [Disable File Decorations](#disable-file-decorations) - Disable file decorations (Git, problems) in the Explorer view.
-  - [Explorer File Nesting](#explorer-file-nesting) - Nesting generated files under source files in the Explorer..
+  - [Explorer File Nesting](#explorer-file-nesting) - Nesting generated files under source files in the Explorer.
+  - [Sort Files in Explorer](#sort-files-in-explorer) - Sort files order by type in the Explorer.
 - [Search](#search)
   - [Exclude Files from Search](#exclude-files-from-search) - Exclude specific files or directories from search results.
   - [Show Line Numbers For Search Results](#show-line-numbers-for-search-results) - Show line numbers for search results.
@@ -41,7 +42,7 @@ A curated list of simple and awesome [Visual Studio Code](https://code.visualstu
 
 #### Overview
 
-Comments are an essential part of code documentation, providing context, explanations, and reminders for developers. However, traditional comments can sometimes be monotonous and lack visual distinction, making it challenging to differentiate between different types of comments. With the [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) extension in VS Code, you can enhance the readability and organization of your codebase by using custom comment styles that highlight and categorize comments based on their purpose.
+Comments are an essential part of code documentation, providing context, explanations, and reminders for developers. However, traditional comments can sometimes be monotonous and lack visual distinction, making it challenging to differentiate between different types of comments. With the `Better Comments` extension in VS Code, you can enhance the readability and organization of your codebase by using custom comment styles that highlight and categorize comments based on their purpose.
 
 #### How to Solve the Issue
 
@@ -276,6 +277,20 @@ To improve the organization and readability of your project files, you can enabl
 These settings enable file nesting in the Explorer view and collapse the nested files by default. You can also control how the files are nested and displayed by adjusting the `explorer.fileNesting.patterns` option. VS Code by default provides patterns for common file types, but you can customize these patterns to suit your project's specific requirements.
 
 ![Explorer File Nesting](./images/vscode-explorer-file-nesting.png)
+
+### Sort Files in Explorer
+
+#### Overview
+
+When working on projects with multiple files and folders, it's essential to maintain a well-organized file structure for efficient navigation and management. By default, VS Code sorts files and folders in the Explorer view alphabetically, which may not always align with your preferred ordering or grouping of files.
+
+#### Setting
+
+```json
+"explorer.sortOrder": "type"
+```
+
+By setting the option to `type`, you can group files and folders by type in the Explorer view. This sorting order categorizes files based on their type, such as directories, files, and symbolic links, providing a more structured and organized view of your project's file hierarchy.
 
 ## Search
 
