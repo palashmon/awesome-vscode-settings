@@ -28,6 +28,9 @@ A curated list of simple and awesome [Visual Studio Code](https://code.visualstu
   - [Source Control Font Family](#source-control-font-family) - Customize the font family for the source control view.
   - [Source Control Min & Max Lines](#source-control-min--max-lines) - Set the minimum and maximum number of lines to display.
   - [Source Control Vertical Column Rulers](#source-control-vertical-column-rulers) - Add vertical column rulers to the source control view.
+- [Terminal](#terminal)
+  - [Custom Terminal Cursor Style](#custom-terminal-cursor-style) - Customize the cursor style in the terminal.
+  - [Terminal Font Size](#terminal-font-size) - Adjust the font size in the terminal.
 - [User Interface](#user-interface)
   - [Default Settings Editor](#default-settings-editor) - Open the JSON file editor as the default Settings editor.
   - [Hide Command Center](#hide-command-center) - Hide the Command Center to reduce visual clutter.
@@ -428,6 +431,39 @@ In this example, two vertical column rulers are added at character positions 50 
 **Quick Tip:** You can also disable word wrapping in the source control "Message" input field by setting `"editor.wordWrap": "off"`. This ensures that long lines of text are not wrapped, allowing you to view and edit commit messages without line breaks.
 
 You can read more about [Git Commit Message with the 50/72 Rule](https://dev.to/noelworden/improving-your-commit-message-with-the-50-72-rule-3g79) here.
+
+## Terminal
+
+### Custom Terminal Cursor Style
+
+#### Overview
+
+The terminal in VS Code provides a command-line interface for executing commands, running scripts, and interacting with the underlying operating system. While the terminal cursor is typically displayed as a blinking block, you can customize the cursor style to suit your preferences and improve visibility in the terminal view.
+
+#### Setting
+
+```json
+"terminal.integrated.cursorStyle": "line",
+"terminal.integrated.cursorWidth": 4,
+"terminal.integrated.cursorBlinking": false,
+```
+
+After updating the settings as shown above, the terminal cursor will be displayed as a line with a width of 4 pixels and will not blink. This configuration enhances the visibility of the cursor in the terminal view and provides a more distinct visual indicator for entering commands and navigating the terminal interface.
+
+### Terminal Font Size
+
+#### Overview
+
+The font size in the terminal view plays a crucial role in readability and usability when working with command-line interfaces. By adjusting the font size to suit your preferences, you can enhance the legibility of text in the terminal and create a more comfortable coding environment.
+
+#### Setting
+
+```json
+"terminal.integrated.fontSize": 14,
+"terminal.integrated.lineHeight": 1.2,
+```
+
+After updating the settings as shown above, the font size in the terminal view will be set to 14, and the line height will be adjusted to 1.2 times the font size. These settings improve the readability of text in the terminal and ensure that the content is displayed clearly and legibly. You can adjust the font size and line height values based on your preference to create a customized terminal experience.
 
 ## User Interface
 
