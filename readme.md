@@ -14,7 +14,9 @@ A curated list of simple and awesome [Visual Studio Code](https://code.visualstu
   - [Hide Inlay Hints](#hide-inlay-hints) - Hide inlay hints in the editor for a cleaner view.
   - [Files Auto Save](#files-auto-save) - Automatically save files after a specified delay.
   - [Automatically Fold Imports](#automatically-fold-imports) - Automatically fold imports in the editor.
-  - [Smooth Cursor Animation](#smooth-cursor-animation) - Enable smooth cursor animation for a more fluid editing experience.
+  - [Smooth Cursor Animation](#smooth-cursor-animation) - Enable smooth cursor animation for a more fluid editing
+   experience.
+  - [Show Folding Controls](#show-folding-controls) - Show folding controls in the editor for easier code folding.
 - [Explorer](#explorer)
   - [Compact Folders in Explorer](#compact-folders-in-explorer) - Disable displaying folders in compact form in the Explorer view.
   - [Disable File Decorations](#disable-file-decorations) - Disable file decorations (Git, problems) in the Explorer view.
@@ -219,6 +221,28 @@ Cursor animation in the editor provides visual feedback when moving the cursor b
 ```
 
 Once enabled, smooth cursor animation will provide a more fluid and responsive cursor movement in the editor, enhancing the editing experience and reducing visual distractions.
+
+### Show Folding Controls
+
+#### Overview
+
+Code folding allows you to collapse and expand code blocks in the editor, making it easier to navigate and manage large code files. While code folding is a powerful feature for organizing and structuring your codebase, it can sometimes be challenging to identify and interact with the folding controls in the editor. To improve the visibility and accessibility of folding controls, you can choose to display them always in the editor view.
+
+#### Setting
+
+```json
+"editor.showFoldingControls": "always"
+```
+
+Once the option is set to `always`, folding controls will be displayed permanently in the editor, allowing you to expand or collapse code blocks with ease. This setting enhances the usability of code folding and provides a more intuitive way to manage code sections in your files.
+
+#### Bonus Tip
+
+If you enable "Sticky Scroll" feature, then the folding controls icons will be always visible in there as well, instead of only when you hover in the editor gutter. To enable "Sticky Scroll" feature, add the following setting to your `settings.json` file:
+
+```json
+"editor.stickyScroll.enabled": true
+```
 
 ## Explorer
 
