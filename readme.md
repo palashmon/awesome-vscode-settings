@@ -15,7 +15,7 @@ A curated list of simple and awesome [Visual Studio Code](https://code.visualstu
   - [Files Auto Save](#files-auto-save) - Automatically save files after a specified delay.
   - [Automatically Fold Imports](#automatically-fold-imports) - Automatically fold imports in the editor.
   - [Smooth Cursor Animation](#smooth-cursor-animation) - Enable smooth cursor animation for a more fluid editing
-   experience.
+    experience.
   - [Show Folding Controls](#show-folding-controls) - Show folding controls in the editor for easier code folding.
 - [Explorer](#explorer)
   - [Compact Folders in Explorer](#compact-folders-in-explorer) - Disable displaying folders in compact form in the Explorer view.
@@ -33,6 +33,7 @@ A curated list of simple and awesome [Visual Studio Code](https://code.visualstu
 - [Terminal](#terminal)
   - [Custom Terminal Cursor Style](#custom-terminal-cursor-style) - Customize the cursor style in the terminal.
   - [Terminal Font Size](#terminal-font-size) - Adjust the font size in the terminal.
+  - [Disable Persistent Sessions](#disable-persistent-sessions) - Disable persistent sessions in the terminal.
 - [User Interface](#user-interface)
   - [Default Settings Editor](#default-settings-editor) - Open the JSON file editor as the default Settings editor.
   - [Hide Command Center](#hide-command-center) - Hide the Command Center to reduce visual clutter.
@@ -131,7 +132,9 @@ When working on projects with multiple files having the same name, it can be cha
 #### How to Solve the Issue
 
 <!--lint disable double-link-->
+
 To begin, ensure that custom labels are enabled in your IDE settings. Also, you'll need to define custom patterns that match specific file paths and specify how you want the editor tabs to be labeled. Each entry in this setting should consist of a [glob pattern](https://code.visualstudio.com/docs/editor/glob-patterns) and a corresponding template for the editor tab label.
+
 <!--lint enable double-link-->
 
 In the template, you can utilize variables such as `${filename}`, `${extname}`, `${dirname}`, and `${dirname(N)}` to dynamically replace values from the file's path. Tailor these templates according to your preference to create unique labels for your editor tabs.
@@ -347,7 +350,9 @@ When searching for files or content within your project, you may encounter irrel
 #### How to Solve the Issue
 
 <!--lint disable double-link-->
+
 To exclude files or directories from search results, you can define [glob patterns](https://code.visualstudio.com/docs/editor/glob-patterns) in your `settings.json` file that match the paths you want to ignore. By specifying these patterns in the `files.exclude` setting, you can prevent the search feature from indexing or displaying files that match the defined criteria.
+
 <!--lint enable double-link-->
 
 #### Example
@@ -488,6 +493,22 @@ The font size in the terminal view plays a crucial role in readability and usabi
 ```
 
 After updating the settings as shown above, the font size in the terminal view will be set to 14, and the line height will be adjusted to 1.2 times the font size. These settings improve the readability of text in the terminal and ensure that the content is displayed clearly and legibly. You can adjust the font size and line height values based on your preference to create a customized terminal experience.
+
+### Disable Persistent Sessions
+
+#### Overview
+
+Persistent sessions in the terminal allow you to save and reuse your terminal sessions/history, making it easier to switch between different projects or tasks. However, persistent sessions can be a distraction and may not always be necessary. To reduce visual clutter and improve the readability of the terminal, you can choose to disable persistent sessions in VS Code.
+
+![VS Code Terminal Persistent Sessions](./images/vscode-terminal-reconnection.gif)
+
+#### Setting
+
+```json
+"terminal.integrated.persistentSessions": false
+```
+
+Once this setting is set to `false`, persistent sessions in the terminal will be disabled, allowing you to focus on your code without the distraction of saved sessions.
 
 ## User Interface
 
