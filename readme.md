@@ -318,6 +318,7 @@ To improve the organization and readability of your project files, you can enabl
 "explorer.fileNesting.patterns": {
   "*.scss": "${capture}.css",
   ".eslintrc.*": ".eslintignore, .editorconfig, .prettierrc",
+	"appsettings.json": "appsettings.*.json"
 },
 ```
 
