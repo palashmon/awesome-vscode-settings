@@ -125,6 +125,10 @@ To configure custom comment styles, you can define rules in your `settings.json`
 
 </details>
 
+<br>
+
+![Better Comments](./images/vscode-better-comments.png)
+
 ### Custom Editor Labels
 
 #### Overview
