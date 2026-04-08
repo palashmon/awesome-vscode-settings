@@ -30,6 +30,8 @@ A curated list of simple and awesome [Visual Studio Code](https://code.visualstu
   - [Source Control Font Family](#source-control-font-family) - Customize the font family for the source control view.
   - [Source Control Min & Max Lines](#source-control-min--max-lines) - Set the minimum and maximum number of lines to display.
   - [Source Control Vertical Column Rulers](#source-control-vertical-column-rulers) - Add vertical column rulers to the source control view.
+- [Testing](#testing)
+  - [Never Auto-Open Test Results](#never-auto-open-test-results) - Prevent the Testing view from opening automatically.
 - [Terminal](#terminal)
   - [Custom Terminal Cursor Style](#custom-terminal-cursor-style) - Customize the cursor style in the terminal.
   - [Terminal Font Size](#terminal-font-size) - Adjust the font size in the terminal.
@@ -461,6 +463,26 @@ In this example, two vertical column rulers are added at character positions 50 
 **Quick Tip:** You can also disable word wrapping in the source control "Message" input field by setting `"editor.wordWrap": "off"`. This ensures that long lines of text are not wrapped, allowing you to view and edit commit messages without line breaks.
 
 You can read more about [Git Commit Message with the 50/72 Rule](https://dev.to/noelworden/improving-your-commit-message-with-the-50-72-rule-3g79) here.
+
+## Testing
+
+### Never Auto-Open Test Results
+
+#### Overview
+
+When you run tests often in VS Code, the Testing view can keep opening automatically and pull your attention away from the editor. If you prefer to stay focused and inspect test output only when needed, you can disable that behavior.
+
+#### How to Solve the Issue
+
+Set `testing.automaticallyOpenTestResults` to `neverOpen` in your `settings.json` file. This tells VS Code to never automatically open the Testing views during test runs.
+
+#### Setting
+
+```json
+"testing.automaticallyOpenTestResults": "neverOpen"
+```
+
+This is useful when test runs are frequent or noisy and you want to check the test results only on demand.
 
 ## Terminal
 
